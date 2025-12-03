@@ -42,6 +42,11 @@ git commit -am "Add AVM storage module"  # or similar
 git tag v0.2.0
 git push origin main --tags
 
+# you should not use it in prod - to change the repo content for existing tag
+git tag -f v0.1.0
+git push --force origin v0.1.0
+
+
 
 You can use Git submodules, but I’d actually recommend avoiding them for Terraform modules unless you truly need submodules for other reasons.
 
