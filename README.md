@@ -42,3 +42,14 @@ https://github.com/Azure/terraform-azurerm-avm-res-resources-resourcegroup.git
 
 avm-res-network-virtualnetwork
 https://github.com/Azure/terraform-azurerm-avm-res-network-virtualnetwork.git
+
+
+You can use Git submodules, but I’d actually recommend avoiding them for Terraform modules unless you truly need submodules for other reasons.
+
+Recommended: Use Git module source, not Git submodule
+
+You have:
+
+Repo A: my-org/caf-avm-modules (all AVM modules, vendored)
+
+Repo B: my-org/caf-avm-lz (your layered IaC)
