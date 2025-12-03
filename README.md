@@ -44,7 +44,7 @@ git push origin main --tags
 
 # you should not use it in prod - to change the repo content for existing tag
 git tag -f v0.1.0
-git push --force origin v0.1.0
+git push --force origin main --tags
 
 
 
