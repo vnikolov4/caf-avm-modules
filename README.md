@@ -36,6 +36,14 @@ The own Repo AVM module structure:
 # Example of the git command to be executed for creating the tree:
 git subtree add --prefix avm-res-network-virtualnetwork https://github.com/Azure/terraform-azurerm-avm-res-network-virtualnetwork.git main --squash
 git subtree add --prefix avm-res-resources-resourcegroup https://github.com/Azure/terraform-azurerm-avm-res-resources-resourcegroup.git main --squash
+git subtree add --prefix avm-res-compute-virtualmachine https://github.com/Azure/terraform-azurerm-avm-res-compute-virtualmachine.git main --squash
+git subtree add --prefix avm-res-network-networkinterface https://github.com/Azure/terraform-azurerm-avm-res-network-networkinterface.git main --squash
+git subtree add --prefix avm-res-managedidentity-userassignedidentity https://github.com/Azure/terraform-azurerm-avm-res-managedidentity-userassignedidentity.git main --squash
+
+
+
+
+
 
 # make changes (add/update AVM modules)
 git commit -am "Add AVM storage module"  # or similar
