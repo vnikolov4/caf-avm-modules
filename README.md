@@ -40,6 +40,8 @@ git subtree add --prefix avm-res-compute-virtualmachine https://github.com/Azure
 git subtree add --prefix avm-res-network-networkinterface https://github.com/Azure/terraform-azurerm-avm-res-network-networkinterface.git main --squash
 git subtree add --prefix avm-res-managedidentity-userassignedidentity https://github.com/Azure/terraform-azurerm-avm-res-managedidentity-userassignedidentity.git main --squash
 git subtree add --prefix avm-res-authorization-roleassignment https://github.com/Azure/terraform-azurerm-avm-res-authorization-roleassignment.git main --squash
+git subtree add --prefix avm-res-storage-storageaccount https://github.com/Azure/terraform-azurerm-avm-res-storage-storageaccount.git main --squash
+git subtree add --prefix avm-res-network-routetable https://github.com/Azure/terraform-azurerm-avm-res-network-routetable.git main --squash
 
 
 
