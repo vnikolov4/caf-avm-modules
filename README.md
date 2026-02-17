@@ -49,11 +49,12 @@ git subtree add --prefix avm-res-containerservice-managedcluster https://github.
 
 
 # make changes (add/update AVM modules)
-git commit -am "Add AVM storage module"  # or similar
+git commit -am "Add AVM AKS module"  # or similar
 git tag v0.2.0
 git push origin main --tags
 
 # you should not use it in prod - to change the repo content for existing tag
+git commit -m "Add AVM AKS module" 
 git tag -f v0.1.0
 git push --force origin main --tags
 
