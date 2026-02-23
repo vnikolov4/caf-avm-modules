@@ -45,21 +45,24 @@ git subtree add --prefix avm-res-network-routetable https://github.com/Azure/ter
 git subtree add --prefix avm-res-network-networksecuritygroup https://github.com/Azure/terraform-azurerm-avm-res-network-networksecuritygroup.git main --squash
 git subtree add --prefix avm-res-containerservice-managedcluster https://github.com/Azure/terraform-azurerm-avm-res-containerservice-managedcluster.git main --squash
 
+git subtree add --prefix avm-res-compute-virtualmachine https://github.com/Azure/terraform-azurerm-avm-res-compute-virtualmachine.git main --squash
+
+
+
 git subtree add --prefix delme/azure/modules/avm-res-containerservice-managedcluster https://github.com/Azure/terraform-azurerm-avm-res-containerservice-managedcluster.git main --squash
 
 git subtree add --prefix iac/terraform/azure/modules/avm-res-network-routetable https://github.com/Azure/terraform-azurerm-avm-res-network-routetable.git main --squash
 git subtree add --prefix iac/terraform/azure/modules/avm-res-network-networksecuritygroup https://github.com/Azure/terraform-azurerm-avm-res-network-networksecuritygroup.git main --squash
-
 git subtree add --prefix iac/terraform/azure/modules/avm-res-network-virtualnetwork https://github.com/Azure/terraform-azurerm-avm-res-network-virtualnetwork.git main --squash
+git subtree add --prefix iac/terraform/azure/modules/avm-res-resources-resourcegroup https://github.com/Azure/terraform-azurerm-avm-res-resources-resourcegroup.git main --squash
 
-
-
-
+git ls-remote --tags https://github.com/vnikolov4/caf-avm-modules.git
 
 # make changes (add/update AVM modules)
 git commit -am "Add AVM AKS module"  # or similar
-git tag v0.2.0
+git tag v0.1.1
 git push origin main --tags
+git push -u origin feature/ajdp-test  --tags
 
 # you should not use it in prod - to change the repo content for existing tag
 git commit -m "Included vNet, NSGs, Route-Tables AVM modules" 
