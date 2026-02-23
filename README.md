@@ -45,7 +45,7 @@ git subtree add --prefix avm-res-network-routetable https://github.com/Azure/ter
 git subtree add --prefix avm-res-network-networksecuritygroup https://github.com/Azure/terraform-azurerm-avm-res-network-networksecuritygroup.git main --squash
 git subtree add --prefix avm-res-containerservice-managedcluster https://github.com/Azure/terraform-azurerm-avm-res-containerservice-managedcluster.git main --squash
 
-git subtree add --prefix avm-res-compute-virtualmachine https://github.com/Azure/terraform-azurerm-avm-res-compute-virtualmachine.git main --squash
+git subtree add --prefix avm-res-keyvault-vault https://github.com/Azure/terraform-azurerm-avm-res-keyvault-vault.git main --squash
 
 
 
