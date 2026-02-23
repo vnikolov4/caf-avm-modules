@@ -45,6 +45,14 @@ git subtree add --prefix avm-res-network-routetable https://github.com/Azure/ter
 git subtree add --prefix avm-res-network-networksecuritygroup https://github.com/Azure/terraform-azurerm-avm-res-network-networksecuritygroup.git main --squash
 git subtree add --prefix avm-res-containerservice-managedcluster https://github.com/Azure/terraform-azurerm-avm-res-containerservice-managedcluster.git main --squash
 
+git subtree add --prefix delme/azure/modules/avm-res-containerservice-managedcluster https://github.com/Azure/terraform-azurerm-avm-res-containerservice-managedcluster.git main --squash
+
+git subtree add --prefix iac/terraform/azure/modules/avm-res-network-routetable https://github.com/Azure/terraform-azurerm-avm-res-network-routetable.git main --squash
+git subtree add --prefix iac/terraform/azure/modules/avm-res-network-networksecuritygroup https://github.com/Azure/terraform-azurerm-avm-res-network-networksecuritygroup.git main --squash
+
+git subtree add --prefix iac/terraform/azure/modules/avm-res-network-virtualnetwork https://github.com/Azure/terraform-azurerm-avm-res-network-virtualnetwork.git main --squash
+
+
 
 
 
@@ -54,7 +62,7 @@ git tag v0.2.0
 git push origin main --tags
 
 # you should not use it in prod - to change the repo content for existing tag
-git commit -m "Add AVM AKS module" 
+git commit -m "Included vNet, NSGs, Route-Tables AVM modules" 
 git tag -f v0.1.0
 git push --force origin main --tags
 
